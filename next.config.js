@@ -7,7 +7,9 @@ const withPWA = require('next-pwa')({
 
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['@tensorflow/tfjs', '@tensorflow-models/cobilm'],
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 module.exports = withPWA(nextConfig);
