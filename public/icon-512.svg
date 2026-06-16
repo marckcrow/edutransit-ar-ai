@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#0F172A"/>
+  <!-- Signal pole -->
+  <rect x="236" y="140" width="40" height="220" rx="10" fill="#94A3B8"/>
+  <!-- Horizontal bar -->
+  <rect x="106" y="140" width="300" height="40" rx="14" fill="#94A3B8"/>
+  <!-- Red light -->
+  <circle cx="156" cy="160" r="46" fill="#EF4444" filter="url(#glow-red)"/>
+  <!-- Yellow light -->
+  <circle cx="256" cy="160" r="46" fill="#1E293B" stroke="#64748B" stroke-width="5"/>
+  <!-- Green light -->
+  <circle cx="356" cy="160" r="46" fill="#1E293B" stroke="#64748B" stroke-width="5"/>
+  <!-- AI stars -->
+  <path d="M390 340 L400 370 L430 360 L405 380 L420 410 L392 385 L364 410 L378 380 L350 370 L382 340 Z" fill="#FACC15"/>
+  <path d="M115 330 L120 348 L138 345 L124 358 L130 375 L114 362 L98 375 L104 358 L90 345 L108 348 Z" fill="#FACC15" opacity="0.7"/>
+  <!-- Base -->
+  <rect x="160" y="358" width="192" height="20" rx="10" fill="#475569"/>
+  <!-- Glow -->
+  <defs>
+    <filter id="glow-red" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+</svg>
